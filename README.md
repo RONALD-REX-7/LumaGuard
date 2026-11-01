@@ -14,7 +14,7 @@ An embedded safety and work-zone proximity monitoring prototype built on the **A
 ## Physical Hardware Prototype
 
 ![LumaGuard Physical Breadboard Hardware Prototype](hardware/breadboard_prototype.jpg)
-*Figure 1: Fully integrated, bench-tested physical prototype assembled on an 830-point solderless breadboard, featuring the Arduino Nano (left), 0.96" SSD1306 OLED (bottom center), HC-SR04 ultrasonic transducer (top center), IR optical flame module (top right), indicator LEDs, piezo buzzer, and tactical control pushbutton.*
+*Figure 1: Fully integrated, bench-tested physical prototype assembled on an 830-point solderless breadboard, featuring the Arduino Nano (left), 0.96" SSD1306 OLED displaying live telemetry ("Luma Guard / Armed / Dist: 12.5 cm"), HC-SR04 ultrasonic transducer (top center), IR optical flame module (top right), indicator LEDs (Green on D4, Red on D5, with Blue auxiliary unassigned), piezo buzzer (D6), and tactical control pushbutton (D7).*
 
 ---
 
@@ -71,6 +71,7 @@ flowchart TD
 | **HC-SR04 Ultrasonic** | `ECHO` | `D3` | Digital Input | Bounded echo duration read (25 ms timeout) |
 | **Green Status LED** | `ANODE` | `D4` | Digital Output | Active HIGH (SAFE status; requires fresh echo) |
 | **Red Alert LED** | `ANODE` | `D5` | Digital Output | Active HIGH (Hazard active or silenced) |
+| **Auxiliary Blue LED**| `ANODE` | — | Bench Indicator | Seated on breadboard during assembly; unassigned in firmware |
 | **Piezo Buzzer** | `POS (+)` | `D6` | Digital Output | 2.4 kHz tone bursts (80 ms ON time, variable period) |
 | **Tactile Pushbutton** | `SWITCH` | `D7` | Digital Input | Active LOW (`INPUT_PULLUP`, 35 ms debounce) |
 | **IR Flame Module** | `DO` | `D9` | Digital Input | Active LOW comparator output (Optical candidate trigger) |

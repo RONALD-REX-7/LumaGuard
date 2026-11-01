@@ -16,6 +16,7 @@
 | **HC-SR04 Ultrasonic** | `ECHO` | `D3` | Digital Input | 5.0 V TTL | Bounded pulse read (25 ms timeout) |
 | **Status Green LED** | `ANODE` | `D4` | Digital Output | 5.0 V Logic (Active HIGH) | In series with 220 Ω resistor to GND |
 | **Status Red LED** | `ANODE` | `D5` | Digital Output | 5.0 V Logic (Active HIGH) | In series with 220 Ω resistor to GND |
+| **Auxiliary Blue LED** | `ANODE` | — | Bench Indicator | Unconnected / Rail Test | Seated on breadboard during initial assembly; unassigned in firmware |
 | **Piezo Buzzer** | `POS (+)` | `D6` | Digital Output | PWM / Tone (Active HIGH) | In series with 1 kΩ resistor to GND |
 | **Tactile Pushbutton** | `TERM 1` | `D7` | Digital Input | Active LOW (`INPUT_PULLUP`) | Other terminal connected to GND |
 | **IR Flame Sensor** | `VCC` | `5V` | System Power | 5.0 V DC (15 mA) | Connect directly to 5V rail |
