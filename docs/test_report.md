@@ -40,3 +40,4 @@ To uphold strict engineering documentation integrity:
 > - **No Metrological Accuracy Claims**: Individual centimetre-level distance accuracy or false-alarm rates per 1,000 hours are omitted because an automated statistical logging campaign was not conducted.
 > - **No Life-Safety Certification**: LumaGuard is an educational engineering demonstrator. It is NOT certified under EN 54, UL 268, NFPA 72, or DGMS statutory mining regulations, and must never be used in life-critical environments.
 > - **Exclusion of DHT22**: The DHT22 sensor failed data-read reliability tests during early prototyping and was explicitly removed from the hardware and software baseline.
+

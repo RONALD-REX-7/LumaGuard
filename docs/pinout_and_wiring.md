@@ -97,3 +97,4 @@ flowchart TD
    - Wire connections: `SDA` to `A4`, `SCL` to `A5`.
 4. **Sensor Warmup & Stabilization**:
    - Upon power-up, allow ~500 ms for the power rail and OLED charge pump to stabilize before issuing I2C commands.
+

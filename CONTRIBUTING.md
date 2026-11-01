@@ -35,3 +35,4 @@ When reporting an issue, please include:
 - Exact microcontroller variant (Classic Nano ATmega328P vs new Nano Every / Nano 33).
 - Pinout and supply voltage details.
 - Steps to reproduce with Serial Monitor output at 9,600 baud.
+

@@ -18,3 +18,4 @@ If you discover:
 - Buffer overflows or unbounded stack growth risks.
 
 Please report them by opening a GitHub Issue with the label `security` or contacting the repository maintainer directly.
+

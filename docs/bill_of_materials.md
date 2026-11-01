@@ -32,3 +32,4 @@
 | **Disarmed Mode** | Nano (25mA) + OLED (15mA) + Sensors active (30mA) + LEDs/Buzzer OFF (0mA) | **~70 mA** | **~350 mW** |
 
 *Power Conclusion:* The prototype operates well within standard USB 2.0 host power delivery limits (500 mA maximum at 5.0 V).
+

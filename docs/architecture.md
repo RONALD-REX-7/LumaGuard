@@ -154,3 +154,4 @@ A single tactile momentary switch on `D7` provides full two-tiered control:
 - Upon boot, `loadEventCounter()` verifies signature `0xF17E`. If uninitialized or corrupted, it formats the record to 0.
 - When `newlyActive = newMask & (~activeHazardMask)` detects that a hazard bit has newly triggered, `eventLog.hazardStarts++` is committed to EEPROM.
 - Surpasses power cycles without wear-leveling concerns due to low hazard event frequency.
+
