@@ -1,5 +1,6 @@
 # LumaGuard — Context-Aware Micro-Workspace Hazard & Proximity Guard
 
+[![Firmware CI](https://github.com/RONALD-REX-7/LumaGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/RONALD-REX-7/LumaGuard/actions/workflows/ci.yml)
 [![PlatformIO Build](https://img.shields.io/badge/PlatformIO-Build_Passing-238636?style=flat&logo=platformio)](https://platformio.org/)
 [![Hardware Target](https://img.shields.io/badge/Target-Arduino_Nano_ATmega328P-00979D?style=flat&logo=arduino)](https://store.arduino.cc/products/arduino-nano)
 [![Status](https://img.shields.io/badge/Maturity-Stage_4:_Hardware_Bench_Tested-007ACC?style=flat)](docs/test_report.md)
