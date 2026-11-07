@@ -1,3 +1,13 @@
+<div align="center">
+
+<img src="portfolio-identity.svg" alt="LumaGuard — project portfolio banner" width="100%">
+
+[← Back to Ronald Rex's engineering portfolio](https://github.com/RONALD-REX-7)
+
+</div>
+
+---
+
 # LumaGuard — Context-Aware Micro-Workspace Hazard & Proximity Guard
 
 [![Firmware CI](https://github.com/RONALD-REX-7/LumaGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/RONALD-REX-7/LumaGuard/actions/workflows/ci.yml)
