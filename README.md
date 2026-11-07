@@ -1,3 +1,13 @@
+<div align="center">
+
+<img src="portfolio-identity.svg" alt="LumaGuard — project portfolio banner" width="100%">
+
+[← Back to Ronald Rex's engineering portfolio](https://github.com/RONALD-REX-7)
+
+</div>
+
+---
+
 # LumaGuard — Context-Aware Micro-Workspace Hazard & Proximity Guard
 
 [![Firmware CI](https://github.com/RONALD-REX-7/LumaGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/RONALD-REX-7/LumaGuard/actions/workflows/ci.yml)
@@ -175,7 +185,7 @@ pio run -e nanoatmega328
 - **Institution**: S.A. Engineering College (Autonomous, Affiliated to Anna University), Chennai, India.
 - **Department**: Department of Electronics and Communication Engineering.
 - **Project Type**: ECE Mini Project Report (November 2026).
-- **Project Team**:
+- **Project Team & Engineering Roles**:
   - **Ronald Rex C H** ([@RONALD-REX-7](https://github.com/RONALD-REX-7)) — Embedded Firmware Architecture, State Machine, PlatformIO Build Automation.
   - **Rahul P** — Hardware Assembly, Sensor Interfacing & Breadboard Integration.
   - **Rudra Kumar M** — Circuit Prototyping, Bench Testing & Electrical Documentation.
