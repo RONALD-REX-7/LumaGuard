@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lumaguard-telemetry"
+version = "1.0.0"
+description = "Parse and validate LumaGuard embedded sensor logs into structured JSON Lines."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Ronald Rex C H" }]
+keywords = ["embedded", "iot", "arduino", "telemetry", "serial", "jsonl", "sensor-data"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Hardware",
+]
+dependencies = []
+
+[project.scripts]
+lumaguard-telemetry = "lumaguard_telemetry.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/RONALD-REX-7/LumaGuard/tree/main/tools/lumaguard-telemetry"
+Repository = "https://github.com/RONALD-REX-7/LumaGuard"
+Issues = "https://github.com/RONALD-REX-7/LumaGuard/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lumaguard_telemetry = ["schemas/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

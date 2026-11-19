@@ -1,0 +1,10 @@
+LumaGuard started; DHT22 excluded
+Short press: acknowledge; long press: ARM/DISARM
+Distance_cm=42.5 | Flame_DO=1 | Flame_AO=1023 | Flame=CLEAR | Mode=ARMED | ActiveMask=0 | SilencedMask=0 | Alert=SAFE | HazardStarts=0
+EVENT: ZONE ALERT STARTED
+HAZARD START COUNT: 1
+Distance_cm=22.4 | Flame_DO=1 | Flame_AO=1023 | Flame=CLEAR | Mode=ARMED | ActiveMask=1 | SilencedMask=0 | Alert=ZONE ALERT | HazardStarts=1
+EVENT: ZONE ALERT CLEARED
+Distance_cm=NO_ECHO | Flame_DO=1 | Flame_AO=1023 | Flame=CLEAR | Mode=ARMED | ActiveMask=0 | SilencedMask=0 | Alert=ZONE UNKNOWN | HazardStarts=1
+SYSTEM: DISARMED
+Distance_cm=NO_ECHO | Flame_DO=1 | Flame_AO=1023 | Flame=CLEAR | Mode=DISARMED | ActiveMask=0 | SilencedMask=0 | Alert=DISARMED | HazardStarts=1

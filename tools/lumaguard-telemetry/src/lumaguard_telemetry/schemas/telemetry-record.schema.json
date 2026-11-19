@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/RONALD-REX-7/LumaGuard/blob/main/tools/lumaguard-telemetry/src/lumaguard_telemetry/schemas/telemetry-record.schema.json",
+  "title": "LumaGuard telemetry record",
+  "description": "A validated status snapshot or event parsed from LumaGuard serial diagnostics.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_type", "distance_cm", "flame_do", "flame_ao", "flame_status", "mode", "active_mask", "silenced_mask", "alert", "hazard_starts"],
+      "properties": {
+        "record_type": {"const": "status"},
+        "distance_cm": {"type": ["number", "null"], "minimum": 2, "maximum": 400},
+        "flame_do": {"type": "integer", "enum": [0, 1]},
+        "flame_ao": {"type": "integer", "minimum": 0, "maximum": 1023},
+        "flame_status": {"type": "string", "enum": ["DETECTED", "CHECK", "CLEAR"]},
+        "mode": {"type": "string", "enum": ["ARMED", "DISARMED"]},
+        "active_mask": {"type": "integer", "minimum": 0, "maximum": 3},
+        "silenced_mask": {"type": "integer", "minimum": 0, "maximum": 3},
+        "alert": {"type": "string", "enum": ["DISARMED", "FLAME + ZONE", "FLAME ALERT", "ZONE ALERT", "SILENCED", "FLAME CHECK", "ZONE UNKNOWN", "SAFE"]},
+        "hazard_starts": {"type": "integer", "minimum": 0, "maximum": 4294967295}
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_type", "event", "message"],
+      "properties": {
+        "record_type": {"const": "event"},
+        "event": {"type": "string", "enum": ["ZONE_ALERT_STARTED", "ZONE_ALERT_CLEARED", "DISTANCE_ECHO_LOST", "FLAME_CONFIRMED", "FLAME_CONDITION_CLEARED", "SYSTEM_ARMED", "SYSTEM_DISARMED", "HAZARD_START_COUNT", "OLED_INIT_FAILED"]},
+        "message": {"type": "string", "minLength": 1},
+        "count": {"type": "integer", "minimum": 0, "maximum": 4294967295}
+      }
+    }
+  ]
+}
